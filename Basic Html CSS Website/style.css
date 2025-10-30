@@ -1,0 +1,105 @@
+:root {
+    --primarybg: hsl(0, 0%, 0%);
+    --navcolor: hsl(0, 0%, 20%);
+    --navtext: white;
+    --textstyle: "Calibri";
+}
+
+/* index.html styles */
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--primarybg);
+    font-family: "Calibri";
+}
+
+
+.navigation {
+    /* position and size */
+    position: sticky;
+    z-index: 10;
+    top: 0px;
+    height: 100px;
+    display: flex;
+    /* borde and color */
+    border: 2px solid var(--navcolor);
+    background-color: var(--navcolor);
+    border-radius: 200px;
+    box-shadow: 8px 5px 7px #2e2d2dab;
+}
+
+.icon {
+    display: flex;
+    width: 25%;
+    align-items: center;
+    /* font style */
+    color: var(--navtext);
+    font-size: 40px;
+    font-family: var(--textstyle);
+    
+}
+
+.nav_list {
+    display: flex;
+    width: 65%;
+    gap: 100px;
+    justify-content: end;
+    align-items: center;
+    list-style-type: none;
+}
+
+ul > li {
+    position: relative;
+    font-family: var(--textstyle);
+    color:  var(--navtext);
+    text-align: center;
+    font-size: 40px;
+}
+
+ul > li > a {
+    color: var(--navtext);
+    text-decoration: none;
+}
+
+.container {
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    top: 50px;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+
+.list {
+    position: relative;
+    list-style-type: none;
+    font-size: 60px;
+}
+
+.role_text {
+    position: relative;
+    /* size */
+    width: 950px;
+    height: 90px;
+    /* font */
+    font-size: 90px;
+    font-family: var(--textstyle);
+    color: var(--navtext);
+    text-shadow: 3px 2px 10px #e5d8d8;
+}
+
+/* contact.html styles */
+.link {
+    list-style-type: none;
+    font-size: 60px;
+    margin: 10px;
+    text-decoration: underline;
+}
+
+.contact_container {
+    position: relative;
+    top: 100px;
+    justify-content: center;
+    align-items: center;
+}

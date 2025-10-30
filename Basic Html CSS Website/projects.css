@@ -1,0 +1,73 @@
+:root {
+    --cardbg: hsl(0, 0%, 20%);
+    --txtcolor: hsl(0, 0%, 100%);
+    --fontfamily: "Calibri";
+}
+
+.main_container {
+    /* border: 2px solid purple; */
+    display: flex;
+    position: relative;
+    top: 50px;
+    justify-content: space-around;
+}
+
+.item_container {
+    /* position */
+    position: relative;
+    display: grid;
+    align-content: stretch;
+    justify-content: center;
+    /* card layout */
+    border: 2px solid var(--cardbg);
+    background-color: var(--cardbg);
+    border-radius: 20px;
+    /* size */
+    height: 100%;
+    width: 32%;
+    /* font */
+    color: var(--txtcolor);
+
+}
+
+.heading {
+    position: relative;
+    left: 50px;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: var(--fontfamily);
+}
+
+.minor_heading {
+    position: relative;
+    left: 25px;
+    color: hsl(0, 0%, 95%);
+    font-size: 50px;
+
+}
+
+.para {
+    position: relative;
+    padding : 1px;
+    left: 10px;
+    color: hsl(0, 0%, 80%);
+    font-size: 30px;
+    word-wrap: break-word;
+
+}
+
+.card_box {
+    position: relative;
+    margin: 10px;
+    width: 95%;
+    justify-self: center;
+    background-color: hsl(0, 0%, 30%);
+    border: 4px solid hsl(0, 0%, 30%);
+    border-radius: 20px;
+    
+}
+
+.links {
+    text-decoration: none;
+    color: hsl(209, 82%, 49%);
+}
