@@ -1,0 +1,115 @@
+:root {
+    --bg-color-primary: hsl(0, 0%, 100%);
+    --bg-color-secondary: hsl(0, 0%, 80%);
+    --color-primary: hsl(0, 0%, 0%);
+    --color-secondary: hsl(0, 0%, 68%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(0, 0%, 88%);
+    font-family: sans-serif;
+}
+
+.log-body{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 55%;
+    align-items: center;
+    border: 2px solid var(--color-primary);
+    background-color: var(--bg-color-primary);
+    border-radius: 20px;
+    box-shadow: 7px 13px 20px -5px rgba(0, 0, 0, 0.5);;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-color-primary);
+}
+
+h1 {
+    background-color: var(--bg-color-primary);
+}
+
+p{
+    color: var(--color-secondary);
+    background-color: var(--bg-color-primary);
+    padding: 1rem;
+}
+
+.logs {
+    position: relative;
+    padding:10px 0px ;
+    width: 80%;
+    display: grid;
+    background-color: var(--bg-color-primary);
+}
+
+figure{
+    position: relative;
+    z-index: 10;
+    background-color: var(--bg-color-primary);
+}
+
+figure > img {
+    background-color: var(--bg-color-primary);
+}
+
+figure:before {
+    position: absolute;
+    content: url(assets/line.svg);
+    display: inline;
+    left: 9px;
+    top: -20px
+}
+
+.log_item {
+    display: grid;
+    grid-template-columns: 2fr 0.5fr 3fr;
+    align-items: center;
+    background-color: var(--bg-color-primary);
+}
+
+.date {
+    color: var(--color-secondary);
+    background-color: var(--bg-color-primary);
+    font-size: 1.1rem;
+}
+
+.content {
+    color: var(--color-primary);
+    font-size: 1.2rem;
+}
+
+
+.btn {
+    margin: 2rem;
+    padding: 10px 30px;
+    background-color: var(--color-primary);
+    border-radius: 10px;
+    border: none;
+}
+
+.btn > a {
+    background-color: var(--color-primary);
+    color: var(--bg-color-primary);
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.btn:hover , .btn-link:hover {
+    cursor: pointer;
+    background-color: hsl(0, 0%, 20%);
+}
+
+@media only screen and (max-width: 910px) {
+    .log-body {
+        width: 500px;
+    }
+}
