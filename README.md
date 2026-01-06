@@ -21,3 +21,8 @@ A central repository for all my frontend projects built following the [roadmap.s
     <div>
         <a href="4_Changelog_Component"><img width="300px" src="Assets\Changelog Component.png" alt=""></a>
     </div>
+
+* [4. Testimonial Cards](5_Testimonial_Cards)
+    <div>
+        <a href="5_Testimonial_Cards"><img width="300px" src="Assets\Testimonial Card.png" alt=""></a>
+    </div>
