@@ -1,0 +1,98 @@
+:root {
+    --border-color: hsl(0, 0%, 60%);
+}
+
+* {
+    font-family: sans-serif;
+}
+
+
+.date_output {
+    width: 500px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.date_output > img:hover {
+    width: 25px;
+    cursor: pointer;
+}
+
+.calendar {
+    width: 500px;
+    box-sizing: border-box;
+}
+
+.month {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: hsl(0, 0%, 96%);
+    border: 2px solid var(--border-color);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.left_arrow{
+    width: 20px;
+}
+
+.left_arrow:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.right_arrow{
+    width: 20px;
+    transform: rotate(180deg);
+}
+
+.right_arrow:hover{
+    width: 20px;
+    transform: rotate(180deg) scale(1.2);
+    cursor: pointer;
+}
+
+.month > span {
+    font-weight: 600;
+}
+
+.month > span:hover {
+    transform: scale(1.2);
+}
+
+.date-day {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    border: 2px solid var(--border-color);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    justify-items: center;
+    align-items: center;
+}
+
+.date-day > span{
+    font-weight: 600;
+}
+
+.date-day > span:hover {
+    cursor: pointer;
+}
+
+.date-day > p {
+    font-size: 1.1rem;
+    padding: 10px;
+    border-radius: 45px;
+}
+
+.date-day > p:hover{
+    color: hsl(0, 0%, 60%);
+    cursor: pointer;
+    background-color: hsl(0, 0%, 80%);
+}

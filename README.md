@@ -22,7 +22,12 @@ A central repository for all my frontend projects built following the [roadmap.s
         <a href="4_Changelog_Component"><img width="300px" src="Assets\Changelog Component.png" alt=""></a>
     </div>
 
-* [4. Testimonial Cards](5_Testimonial_Cards)
+* [5. Testimonial Cards](5_Testimonial_Cards)
     <div>
         <a href="5_Testimonial_Cards"><img width="300px" src="Assets\Testimonial Card.png" alt=""></a>
+    </div>
+
+* [6. DatePicker Ui](6_DatePicker_Ui)
+    <div>
+        <a href="6_DatePicker_Ui"><img width="300px" src="Assets\DstePicker UI.png" alt=""></a>
     </div>
