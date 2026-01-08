@@ -1,0 +1,138 @@
+:root{
+    --bg-color: black;
+    --bg-form: hsl(0, 0%, 19%);
+    --focus-color: hsl(260, 98%, 72%);
+    --secondary-font: hsl(0, 0%, 30%);
+    --primary-font: white;
+}
+
+*{
+    color: var(--primary-font);
+    font-family: sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--bg-color);
+    
+}
+
+.hero_form {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 40px 50px;
+    border-radius: 20px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid hsl(0, 0%, 60%);
+    background-color: var(--bg-form);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+input{
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    color: black;
+    font-weight: 500;
+    box-shadow: inset 0px 0px 12px 1px hsl(0, 0%, 40%);
+}
+
+input:focus{
+    border: 2px solid var(--focus-color);
+    caret-color: black;
+    box-shadow: 0px 0px 10px 0px var(--focus-color);
+}
+
+.full_name, .mail, .password{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.password_btn{
+    position: absolute;
+    align-self: flex-end;
+    width: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    right: 10px;
+    top: 32px;
+}
+
+.password_btn:active {
+    transform: scale(1.2);
+}
+
+.error_txt {
+    margin-top: 10px;
+    color: hsl(0, 100%, 71%);
+}
+
+.update_btn {
+    padding: 15px 10px;
+    background-color: var(--bg-color);
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0px 2px 5px -1px hsl(0, 0%, 40%);
+}
+
+.update_btn:hover {
+    background-color: var(--focus-color);
+    box-shadow: 0px 2px 10px -1px var(--bg-color)
+}
+
+.progress {
+    margin: 40px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.progress_bar {
+    border-radius: 20px;
+    width: 300px;
+    height: 10px;
+    box-shadow: inset 0px 2px 10px -1px var(--bg-color)
+}
+
+.progress_fill {
+    background-color: var(--focus-color);
+    border-radius: 20px;
+    width: 200px;
+    height: 10px;
+}
+
+.percentage{
+    color: var(--focus-color);
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: inset 0px 2px 7px 0px hsl(0, 0%, 30%);
+    padding: 20px;
+    list-style: none;
+    gap: 10px;
+}
+
+
+.hidden {
+    color: var(--secondary-font);
+    text-decoration: line-through;
+}

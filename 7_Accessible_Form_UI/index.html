@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible form UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="hero_form">
+        <form action="#" method="post" class="form">
+            <div class="full_name">
+                <label for="name"><h1>Full Name</h1></label>
+                <input type="text" name="name" id="name" placeholder="What Should we call you?">
+            </div>
+            <div class="mail">
+                <label for="email"><h1>Email</h1></label>
+                <input type="email" name="email" id="email" placeholder="john@doe.com">
+                <span class="error_txt">Email is already taken</span>
+            </div>
+            <div class="password">
+                <label for="password"><h1>Enter Password</h1></label>
+                <input type="password" name="password" id="password">
+                <button class="password_btn" type="button" aria-label="hidden password">
+                    <img src="assets/eye-close.svg" alt="">
+                </button>
+            </div>
+            <div class="password">
+                <label for="cfm_password"><h1>Confirm Password</h1></label>
+                <input type="password" name="cfm_password" id="cfm_password">
+                <button class="password_btn" type="button" aria-label="hidden password">
+                    <img src="assets/eye-close.svg" alt="">
+                </button>
+                <span class="error_txt">Both Password must match</span>
+            </div>
+            <button type="submit" class="update_btn">Update Profile</button>
+        </form>
+        <div class="progress">
+            <span class="progress_bar">
+                <div class="progress_fill"></div>
+            </span>
+            <p class="percentage">65%</p>
+        </div>
+        <footer>
+            <ul class="steps">
+                <li class="hidden">Create Account</li>
+                <li class="hidden">Update Roadmap Progress</li>
+                <li class="hidden">Setup Public Profile</li>
+                <li>Complete your first project</li>
+                <li>Invite your Friends</li>
+            </ul>
+        </footer>
+    </main>
+</body>
+</html>
