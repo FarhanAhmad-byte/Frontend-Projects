@@ -36,3 +36,8 @@ A central repository for all my frontend projects built following the [roadmap.s
     <div>
         <a href="7_Accessible_Form_UI"><img width="300px" src="Assets\Accessible Form UI.png" alt=""></a>
     </div>
+
+* [8. Image Grid Layout](8_Image_Grid_Layout)
+    <div>
+        <a href="8_Image_Grid_Layout"><img width="300px" src="Assets\Image Grid Layout.png" alt=""></a>
+    </div>
