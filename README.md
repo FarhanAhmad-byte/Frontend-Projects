@@ -41,3 +41,8 @@ A central repository for all my frontend projects built following the [roadmap.s
     <div>
         <a href="8_Image_Grid_Layout"><img width="300px" src="Assets\Image Grid Layout.png" alt=""></a>
     </div>
+
+* [9. Tooltip UI](9_Tooltip_UI)
+    <div>
+        <a href="9_Tooltip_UI"><img width="300px" src="Assets\Tooltip UI.png" alt=""></a>
+    </div>
