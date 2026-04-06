@@ -46,3 +46,8 @@ A central repository for all my frontend projects built following the [roadmap.s
     <div>
         <a href="9_Tooltip_UI"><img width="300px" src="Assets\Tooltip UI.png" alt=""></a>
     </div>
+
+* [10. Tabs](10_Tabs)
+    <div>
+        <a href="10_Tabs"><img width="300px" src="Assets\Tabs.png" alt=""></a>
+    </div>

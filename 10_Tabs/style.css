@@ -1,0 +1,87 @@
+:root {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tab-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tab{
+    border: none;
+    color: gray;
+    font-size: 1.5rem;
+    padding: 1rem;
+    background: none; 
+}
+
+.tab:focus {
+    outline: none; /*remove outline when element is focused*/
+    border: none;
+    border-bottom: 5px solid black;
+    color: black;
+}
+
+.active_tab{
+    border-bottom: 5px solid black;
+    color: black;
+}
+
+.card-border {
+    padding: 0.5rem;
+    background-color: gray;
+    border-radius: 10px;
+    width: 50%;
+    margin: 10px auto;
+}
+
+.content {
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    font-size: 2rem;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.container {
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.text {
+    color: black;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.offers {
+    margin: 15px 0px;
+    display: flex;
+    list-style: none;
+    font-size: 1rem;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.offers > p {
+    margin: 0;
+}
+
+#button {
+    padding: 5px 50px;
+    background-color: hsl(36, 89%, 64%);
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+}
+
+#heading {
+    text-decoration: underline;
+}
