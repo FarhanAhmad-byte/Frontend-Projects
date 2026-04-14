@@ -51,3 +51,7 @@ A central repository for all my frontend projects built following the [roadmap.s
     <div>
         <a href="10_Tabs"><img width="300px" src="Assets\Tabs.png" alt=""></a>
     </div>
+* [11. Cookie Consent](11_Cookie_Consent)
+    <div>
+        <a href="11_Cookie_Consent"><img width="300px" src="Assets\Cookie_consent.png" alt=""></a>
+    </div>
