@@ -1,0 +1,36 @@
+
+.container {
+    position: relative;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+
+label {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea {
+    outline: blue;
+    border-radius: 30px;
+    font-size: 1rem;
+    padding: 10px;
+    resize: none;
+}
+
+textarea:focus {
+  outline: none;
+  padding: 10px;
+  border: 3px solid blue;
+  border-radius: 30px;
+}
+
+#totalWords {
+    display: flex;
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
+}

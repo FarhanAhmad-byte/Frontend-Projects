@@ -55,3 +55,7 @@ A central repository for all my frontend projects built following the [roadmap.s
     <div>
         <a href="11_Cookie_Consent"><img width="300px" src="Assets\Cookie_consent.png" alt=""></a>
     </div>
+* [12. Restricted Textarea](12_Restricted_Textarea)
+    <div>
+        <a href="12_Restricted_Textarea"><img width="300px" src="Assets\Restricted_Textarea.png" alt=""></a>
+    </div>
