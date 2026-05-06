@@ -1,0 +1,43 @@
+{
+  "Questions": [
+    {
+      "Question": "What is the capital of France?",
+      "Answer": "Paris"
+    },
+    {
+      "Question": "What is the largest planet in our solar system?",
+      "Answer": "Jupiter"
+    },
+    {
+      "Question": "What is the chemical symbol for gold?",
+      "Answer": "Au"
+    },
+    {
+      "Question": "What is the capital of Japan?",
+      "Answer": "Tokyo"
+    },
+    {
+      "Question": "What is the hardest natural substance on Earth?",
+      "Answer": "Diamond"
+    },
+    {
+      "Question": "How many bones are in the adult human body?",
+      "Answer": "206"
+    },
+    {
+      "Question": "What is the largest mammal in the world?",
+      "Answer": "Blue whale"
+    },
+    {
+      "Question": "In which year did World War II end?",
+      "Answer": "1945"
+    },
+    {
+      "Question": "What is the capital of Australia?",
+      "Answer": "Canberra"
+    },
+      {
+      "Question": "What is the longest river in the world?",
+      "Answer": "Nile"
+    }
+]}
