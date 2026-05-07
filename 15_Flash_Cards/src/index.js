@@ -1,46 +1,13 @@
-// import {dirname} from 'path'
-// import { fileURLToPath } from 'url';
 
-
-// const __filename = fileURLToPath(import.meta.url)
-// const __dirname = dirname(__filename)
-
-const Questions = [
-    {
-      "Question": "What is the capital of France?",
-      "Answer": "Paris"
-    },
-    {
-      "Question": "What is the largest planet in our solar system?",
-      "Answer": "Jupiter"
-    },
-    {
-      "Question": "What is the chemical symbol for gold?",
-      "Answer": "Au"
-    },
-    {
-      "Question": "What is the capital of Japan?",
-      "Answer": "Tokyo"
-    },
-    {
-      "Question": "What is the hardest natural substance on Earth?",
-      "Answer": "Diamond"
-    },
-]
-
-async function getData() {
-
-    const  filePath = __dirname + "\\public\\question.json"
+async function getData(filepath) {
     try{
-        const response = await fetch(filePath)
+        const response = await fetch(filepath)
 
-        if ( response ) {
-            return response
-        } else {
-            console.log("NO Data Found ||")
-            return
-        }
+        const data = await response.json()
         
+        if ( data ) {
+            return data
+        }        
     }
     catch (error){
         console.log(`JSON data fetching error: \n${error}`)
@@ -49,42 +16,50 @@ async function getData() {
         
 }
 
-function progressBar(state, question){
-    const currentProgress = state.value
-    const totalQuestion = question.length - 1
 
-    const progressPercent = ( currentProgress / totalQuestion ) * 100
+function progressBar(state, question){
+    const currentProgress = state.value + 1
+    const totalQuestion = question.length
+
+    const progressPercent = Math.ceil(( currentProgress / totalQuestion ) * 100)
 
     document.getElementById('progressBar').style.width = `${progressPercent}%`
     document.getElementById('progressPercent').textContent = `${progressPercent}%`
-    document.getElementById('progressCount').textContent = `${currentProgress} of ${totalQuestion}`  
+    document.getElementById('progressCount').textContent = `${currentProgress} of ${totalQuestion}`
 }
 
-const previousCard = (questionElement, answerElement, state) => {
 
+const previousCard = (state, data) => {
+
+    const questions = data["Questions"]
     
     if (state.value > 0) {
         state.value -= 1
     }
 
-    document.getElementById(questionElement).textContent = Questions[state.value]["Question"]
-    document.getElementById(answerElement).textContent = Questions[state.value]["Answer"]
+    document.getElementById('questionText').textContent = questions[state.value]["Question"]
+    document.getElementById('answerText').textContent = questions[state.value]["Answer"]
+    document.getElementById('quesNo').textContent = `Question ${questions[state.value]["no"]}`
+    document.getElementById('ansNo').textContent = `Answer ${questions[state.value]["no"]}`
 
-    // uncomment this if you want to change progress on the basis of question not progression
-    progressBar(state)
+    // uncomment this if you want to change progress on the basis of questions not the progression
+    // progressBar(state)
 }
 
-function nextCard(questionElement, answerElement, state, data) {
-    // const questionLength = data
+function nextCard(state, data) {
 
-    if (state.value < (Questions.length - 1)){
+    const questions = data["Questions"]
+
+    if (state.value < (questions.length - 1)){
         state.value += 1
     }
 
-    document.getElementById(questionElement).textContent = Questions[state.value]["Question"]
-    document.getElementById(answerElement).textContent = Questions[state.value]["Answer"]
+    document.getElementById('questionText').textContent = questions[state.value]["Question"]
+    document.getElementById('answerText').textContent = questions[state.value]["Answer"]
+    document.getElementById('quesNo').textContent = `Question ${questions[state.value]["no"]}`
+    document.getElementById('ansNo').textContent = `Answer ${questions[state.value]["no"]}`
     
-    progressBar(state, Questions)
+    progressBar(state, questions)
 }
 
 export {nextCard, previousCard, getData}
