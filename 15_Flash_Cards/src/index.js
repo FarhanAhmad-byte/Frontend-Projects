@@ -26,7 +26,6 @@ const previousCard = (number, setNumber) => {
         setNumber(number - 1)
     }
 
-
 }
 
 function nextCard(number, setNumber, data) {

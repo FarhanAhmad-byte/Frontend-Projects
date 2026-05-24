@@ -1,0 +1,114 @@
+{
+  "Questions": [
+    {
+      "no": 1,
+      "Question": "What is the capital of France?",
+      "Answer": "Paris",
+      "Options": [
+        "Paris",
+        "London",
+        "Delhi",
+        "China"
+      ]
+    },
+    {
+      "no": 2,
+      "Question": "What is the largest planet in our solar system?",
+      "Answer": "Jupiter",
+      "Options": [
+        "Earth",
+        "Mars",
+        "Antarctica",
+        "Jupiter"
+      ]
+    },
+    {
+      "no": 3,
+      "Question": "What is the chemical symbol for gold?",
+      "Answer": "Au",
+      "Options": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "no": 4,
+      "Question": "What is the capital of Japan?",
+      "Answer": "Tokyo",
+      "Options": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "no": 5,
+      "Question": "What is the hardest natural substance on Earth?",
+      "Answer": "Diamond",
+      "Options": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "no": 6,
+      "Question": "How many bones are in the adult human body?",
+      "Answer": "206",
+      "Options": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "no": 7,
+      "Question": "What is the largest mammal in the world?",
+      "Answer": "Blue whale",
+      "Options": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "no": 8,
+      "Question": "In which year did World War II end?",
+      "Answer": "1945",
+      "Options": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "no": 9,
+      "Question": "What is the capital of Australia?",
+      "Answer": "Canberra",
+      "Options": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "no": 10,
+      "Question": "What is the longest river in the world?",
+      "Answer": "Nile",
+      "Options": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ]
+}
