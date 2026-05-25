@@ -8,6 +8,7 @@ export default function Quiz({ data }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [submitted, setSubmitted] = useState(false);
   const [score, setScore] = useState(0)
+  const [notAnswer, setNotAnswered] = useState(0)
 
   const incrementQuestionIndex = (setShowButtonState) => {
     // increment current state if it is less than last index of the data and set show button state to false
@@ -25,7 +26,7 @@ export default function Quiz({ data }) {
       key={currentQuestion?.no}
       className=""
     >
-      {submitted ? <QuizResultCard result={score} totalQuestion={dataLastIndex + 1} /> : <QuizCard changeQuestion={ incrementQuestionIndex } currentQuestion={currentQuestion} currentIndex={currentIndex} dataLastIndex={dataLastIndex} setSubmitState={setSubmitted} score={score} setScore={setScore} />}
+      {submitted ? <QuizResultCard result={score} notAttempt={notAnswer} totalQuestion={dataLastIndex + 1} /> : <QuizCard changeQuestion={ incrementQuestionIndex } currentQuestion={currentQuestion} currentIndex={currentIndex} dataLastIndex={dataLastIndex} setSubmitState={setSubmitted} setScore={setScore} setNotAnswered={setNotAnswered} />}
     </div>
   );
 }

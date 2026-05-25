@@ -1,9 +1,8 @@
 /* eslint-disable no-useless-assignment */
 import { useState } from "react"
+import useTimer from "../hooks/useTimer"
 
-export default function QuizCard({currentQuestion, changeQuestion, currentIndex, dataLastIndex, setSubmitState, score, setScore}) {
-
-  function pickAnswer(element, question, score) {
+function pickAnswer(element, question, score, setShowButton) {
     const inputs = document.querySelectorAll("input")    
     const parent = element.target.parentElement
 
@@ -27,19 +26,24 @@ export default function QuizCard({currentQuestion, changeQuestion, currentIndex,
     setShowButton(true)
   }
 
+export default function QuizCard({currentQuestion, changeQuestion, currentIndex, dataLastIndex, setSubmitState, setScore, setNotAnswered}) {
+
+  const [currentTime, setCurrentTime] = useState(null)
   const [showButton, setShowButton] = useState(false)
+
+  useTimer(currentTime, setCurrentTime, setScore, setShowButton, setNotAnswered)
 
   return (
     <div className="w-120 flex flex-col items-center border border-zinc-700 p-5 rounded-2xl">
       <div className="border-b-2 border-white w-full mx-2 text-2xl p-2 flex justify-between">
           <h1>Quiz {currentQuestion?.no}</h1>
-          <h2 className="text-xl">Score: {score}</h2>
+          <h2 id="timer" className="text-xl">Timer: { currentTime }</h2>
       </div>
       <p className="py-5 text-3xl">{currentQuestion?.Question}</p>
       <form className="flex flex-col gap-3"
         >
         <div className="border border-white bg-white text-black text-2xl flex gap-5 rounded-4xl w-100">
-          <input onClick={(e) => { pickAnswer(e, currentQuestion, setScore) }}
+          <input onClick={(e) => { pickAnswer(e, currentQuestion, setScore, setShowButton) }}
           className="size-5 self-center color m-2 hover:cursor-pointer"
           name="choice"
           type="radio"
@@ -49,7 +53,7 @@ export default function QuizCard({currentQuestion, changeQuestion, currentIndex,
         </div>
 
         <div className="border border-white bg-white text-black text-2xl flex gap-5 rounded-4xl w-100">
-          <input onClick={(e) => { pickAnswer(e, currentQuestion, setScore) }}
+          <input onClick={(e) => { pickAnswer(e, currentQuestion, setScore, setShowButton) }}
           className="size-5 self-center color m-2 hover:cursor-pointer"
           name="choice"
           type="radio"
@@ -59,7 +63,7 @@ export default function QuizCard({currentQuestion, changeQuestion, currentIndex,
         </div>
 
         <div className="border border-white bg-white text-black text-2xl flex gap-5 rounded-4xl w-100">
-          <input onClick={(e) => { pickAnswer(e, currentQuestion, setScore) }}
+          <input onClick={(e) => { pickAnswer(e, currentQuestion, setScore, setShowButton) }}
           className="size-5 self-center color m-2 hover:cursor-pointer"
           name="choice"
           type="radio"
@@ -69,7 +73,7 @@ export default function QuizCard({currentQuestion, changeQuestion, currentIndex,
         </div>
         
         <div className="border border-white bg-white text-black text-2xl flex gap-5 rounded-4xl w-100">
-          <input onClick={(e) => { pickAnswer(e, currentQuestion, setScore) }}
+          <input onClick={(e) => { pickAnswer(e, currentQuestion, setScore, setShowButton) }}
           className="size-5 self-center color m-2 hover:cursor-pointer"
           name="choice"
           type="radio"

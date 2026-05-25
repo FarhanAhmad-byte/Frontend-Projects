@@ -71,3 +71,7 @@ A central repository for all my frontend projects built following the [roadmap.s
     <div>
         <a href="15_Flash_Cards"><img width="300px" src="Assets\Flash_Cards.png" alt=""></a>
     </div>
+* [16. Quiz App](16_Quiz_App)
+    <div>
+        <a href="16_Quiz_App"><img width="300px" src="Assets\Quiz_App.png" alt=""></a>
+    </div>
