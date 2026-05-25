@@ -5,17 +5,18 @@ import useData from "./hooks/useData"
 function StartUP({setFunc}) {
   return (
     <div
-      className="w-full border border-zinc-700 flex flex-col items-center text-2xl font-sans p-3 rounded-3xl gap-5"
+      className="w-full flex flex-col items-center text-2xl font-sans rounded-3xl gap-5"
     >
-      <h1 className="text-center text-4xl py-4 px-10 rounded-[5px] bg-orange-400">Quiz</h1>
-      <ul className="list-disc p-6">
-        <li>This is a Multiple Choice based quiz</li>
-        <li>There is not any negative markings</li>
-        <li>I can do whatever I want</li>
+      <h1 className="text-center w-full text-4xl py-4 px-10 rounded-b-full  bg-slate-600 border-b-2 shadow-2xl border-slate-700">Quiz App</h1>
+      <ul className="p-6 gap-5 flex flex-col">
+        <li className="bg-slate-700 py-4 px-5 rounded-2xl m-1">This is a Multiple Choice based quiz</li>
+        <li className="bg-slate-700 py-4 px-5 rounded-2xl m-1">The Questions are presented in a card and can only be changed if answered of timer runs out</li>
+        <li className="bg-slate-700 py-4 px-5 rounded-2xl m-1">No negative marking for incorrect answers</li>
+        <li className="bg-slate-700 py-4 px-5 rounded-2xl m-1">There is a timer of 1 min for each question and if timer runs out 1 point will be deducted</li>
       </ul>
       <button
         onClick={() => { setFunc((prev) => !prev) }}
-        className="text-3xl font-bold py-5 px-10 rounded-[5px] text-white bg-gray-700 hover:scale-105 transition-all hover:bg-gray-500"
+        className="text-3xl font-bold py-5 px-10 rounded-3xl text-black bg-slate-300 hover:scale-105 transition-all"
       >
         Start
       </button>
@@ -32,7 +33,7 @@ function QuizLayout() {
 
   return (
       <div
-        className="flex flex-col items-center w-full p-3 gap-5"
+        className="flex flex-col items-center w-full h-full p-3 gap-5"
       >
         <Quiz data={data}/>
       </div>
@@ -43,7 +44,7 @@ function App() {
   const [start, setStart] = useState(true)
 
   return (
-    <div className="bg-gray-800 w-full min-h-screen flex justify-center items-center flex-col gap-5 text-white">
+    <div className="bg-slate-900 w-full min-h-screen flex items-center flex-col gap-5 text-white">
         {(start) ? ( <StartUP setFunc={setStart} /> ) : ( <QuizLayout /> )}
     </div>
   );
